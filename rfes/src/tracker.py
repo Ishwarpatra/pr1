@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+from typing import Optional
 
 class Tracker:
     def __init__(self, checkpoint_file="checkpoints.csv"):
@@ -18,7 +19,7 @@ class Tracker:
         print(f"✓ Checkpoint saved for Dataset {dataset_id} with status: {status}")
 
     def is_completed(self, dataset_id: int) -> bool:
-        return (self.checkpoints["dataset_id"] == dataset_id).any()
+        return bool((self.checkpoints["dataset_id"] == dataset_id).any())
 
     def get_last_completed_dataset(self) -> Optional[int]:
         completed = self.checkpoints[self.checkpoints["status"] == "completed"]

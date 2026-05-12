@@ -1,0 +1,8 @@
+__pycache__/
+*.pkl
+*.bak
+outputs/
+saved_models/
+.ipynb_checkpoints/
+checkpoints.csv
+*.log

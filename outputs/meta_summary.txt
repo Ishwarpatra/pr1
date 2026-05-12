@@ -1,0 +1,9 @@
+META-PERFORMANCE AUDIT
+======================
+Total Datasets: 3
+DHPO Wins: 2
+DHPO Ties: 0
+DHPO Losses: 1
+Win/Tie Rate: 66.67%
+Avg DHPO Accuracy: 0.8633
+Avg Default Accuracy: 0.8575

@@ -1,0 +1,16 @@
+name: rfes_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy=1.23.5
+  - sympy=1.13.1
+  - pandas=2.2.1
+  - scikit-learn=1.4.1
+  - openml=0.14.2
+  - optuna=3.5.0
+  - pip:
+    - pysr==0.17.2
+    - joblib==1.3.2
+    - ipywidgets
